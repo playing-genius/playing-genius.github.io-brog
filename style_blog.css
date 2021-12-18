@@ -1,0 +1,72 @@
+@charset "UTF-8"
+header{
+	background-color: orange;
+	font: #ffffff;
+	width: 100%;
+}
+/*ナビバー*/
+nav{
+	display: inline-block;
+	position: relative;
+}
+nav a{
+	color: #ffffff;
+}
+.top-icon{
+	height: 80px;
+	line-height: 80px;
+	padding: 0 24px;
+	z-index: 4;
+	position: relative;
+}
+.top-icon h2{
+	font-size: 34px;
+}
+.top-icon h2 a{
+	transition: color .5s;
+}
+.nav-bar-opener{
+	display: inline-block;
+	position: absolute;
+	top: 39%;
+	right: 5px;
+	z-index: 5;
+	transition: transform .5s;
+}
+.top-btn{
+	border: none;
+	background-color: rgba(0,0,0,0);
+	color: #ffffff;
+}
+.navbar-links{
+	position: absolute;
+	width: 100vw;
+	top: -680px;
+	transition: top .5s;
+}
+.navbar-links ul{
+	padding: 88px 24px 24px;
+	background-color: skyblue;
+}
+.navbar-links ul li a{
+	color: #484848;
+	padding: 5px;
+}
+.navbar-links li{
+	height: 80px;
+	line-height: 80px;
+	background-color: skyblue;
+}
+/*ボタンが押されたあとのスタイル*/
+.navbar-links.show{
+	top: 0;
+}
+.top-icon h2 a.show{
+	color: #ff646a;
+}
+.nav-bar-opener.show{
+	transform: rotate(180deg);
+}
+.top-btn.show{
+	color: #484848;
+}
